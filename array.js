@@ -1,5 +1,4 @@
-var array = [2,3,4,4,5];
-
+var array = ['hello', 'what','are', 'you', 'doing'];
 
 function arrayAdd (array, thing) {
   array[array.length] = thing;
@@ -30,10 +29,10 @@ function arrayUnshift (array, thing) {
 // removes duplictes
 function unique (array) {
   var newArray = [];
-  var original = true;
   for (var i = 0; i < array.length; i++) {
-    original = true;
-    for (var x = i + 1; x <array.length; x++) {
+    var original = true;
+
+    for (var x = i + 1; x < array.length; x++) {
       if(array[i] === array[x]) {
         original = false;
       }
@@ -45,13 +44,25 @@ function unique (array) {
   return newArray
 }
 
-//find most common letter
+//find most common letter return common letter
 function frequency2 (array) {
-
+  var alphabet = {};
+  var commonLetter = '';
+  for (var i = 0; i < array.length; i++) {
+    for (var c = 0; c < array[i].length; c++) {
+      var character = array[i].charAt(c);
+      if (!alphabet[character]) {
+        alphabet[character] = 0;
+      }
+      alphabet[array[i].charAt(c)]++;
+      if(commonLetter == '' || alphabet[character] > alphabet[commonLetter]) {
+        commonLetter = character;
+      }
+    };
+  };
+  return commonLetter
 }
-console.log(unique(array));
-
+// console.log(frequency2(array));
 // console.log(arrayAdd(array, 'string'));
 // console.log(arrayPop(array));
 // console.log(arrayShift(array))
-
