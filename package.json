@@ -1,0 +1,28 @@
+{
+  "name": "data_structures_and_algorithms",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "reposiotry": {
+    "type": "git",
+    "url": "git+https://github.com/MTse3/data_structures_and_algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MTse3/data_structures_and_algorithms/issues"
+  },
+  "homepage": "https://github.com/MTse3/data_structures_and_algorithms#readme",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.12.0",
+    "gulp-mocha": "^2.1.3"
+  }
+}
