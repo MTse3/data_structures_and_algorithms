@@ -1,12 +1,14 @@
 'use strict';
 
-var array = require(__dirname + '/lib/array');
-
+// mimics array prototype Push
 var arrayAdd = require(__dirname + '/lib/add');
-
+// mimics array prototype Pop
+var arrayPop = require(__dirname + '/lib/arrayPop');
+// mimics array prototype Shift
+var arrayShift = require(__dirname + '/lib/arrayShift');
+// mimics array prototype Unshift
+var arrayUnshift = require(__dirname + '/lib/arrayUnshift');
+//takes and array and returns a copy with duplicates removed
 var unique = require(__dirname + '/lib/unique');
+//given array of english words, finds the most common letter and returns it
 var frequency2 = require(__dirname + '/lib/frequency2');
-
-console.log(arrayAdd.arrayAdd(['cano', 'cruz']))
-// console.log(arrayAdd.arrayAdd([2,4,5,9], 'string'));
-// console.log(unique.unique([2,4,5,9,9,10]));
